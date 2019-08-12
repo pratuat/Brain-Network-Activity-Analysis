@@ -20,11 +20,12 @@ Graph connectivity analysis is used to study dynamic functional connectivity (DF
 
 An autogregressive model assumes that a signal sample X(t) can be expressed in terms of linear sum of **p** previous values of the samples weighted by some  coefficients **A** and a random error **E(t)**.
 
-![MVAR](assets/images/mvar.gif)
+
+<image src="assets/images/mvar.gif"/>
 
 Here, **p** is called model order. The equivalent expression of the model in frequency domain is:
 
-![MVAR](assets/images/mvar_spectral.gif)
+<image src="assets/images/mvar_spectral.gif"/>
 
 **H(f)** is called transfer matrix of the system that represents pairwise causality relationship between the signals and their spectral characteristics.
 
@@ -32,13 +33,13 @@ Here, **p** is called model order. The equivalent expression of the model in fre
 
 Directed Transfer Function (DTF) is a frequency domain estimator introduced by Kaminski and Blinowska, that describes causal influence of a channel on another channel at some frequency. The equation that defines normalized version of DTF measure is.
 
-![MVAR](assets/images/dtf.gif)
+<image src="assets/images/dtf.gif"/>
 
 ### 3.3 Partial Directed Coherence
 
 Partial Directed Coherence is another spectral measure of directed influence between pairs of signals in a multivariate data set. PDC estimators has been shown as frequency version of the Granger causality. It is defined as
 
-![MVAR](assets/images/pdc.gif)
+<image src="assets/images/pdc.gif"/>
 
 ## 4. Methodology
 
@@ -46,7 +47,7 @@ Partial Directed Coherence is another spectral measure of directed influence bet
 
 Power spectral density (PSD) analysis was performed on all channels to compare the strength of different frequency bands. The PSD estimation was done using Welch’s method. As from the figure below, most active signals were observed in the **delta (1-4 Hz)** band for **eyes open** state and **alpha (8-12 Hz)** for **eyes closed** state. Hence empirically identified dominant frequencies of 1 Hz and 11 Hz were used to perform connectivity analysis in further sections.
 
-![psd](assets/images/psd.png)
+<img src="assets/images/psd.png" width=350 />
 
 ### 4.2 Statistical Test for Connectivity
 
@@ -58,8 +59,8 @@ Thus tested estimators were collected for delta frequency band and alpha frequen
 
 For connectivity analysis in case I (delta band) analysis, using DTF estimator we observed high degree of connectivity around right-frontal lobe in both open and closed eye state while PDC estimator approximates even distribution of connectivity across whole brain region. We do not observe considerable discrepancy in connectivity patterns between open and closed eye state for delta band. Delta wave form are associated to relaxed state of brain. Since the subject is at rest, in absence of any external stimuli in both eyes open and closed state, we see no considerable changes in terms of connectivity in two states.
 
-![delta](assets/images/delta.png)
+<img src="assets/images/delta.png" width=600 />
 
 In case II (alpha band), DTF estimation projects connectivity of the nodes highly localized in right-frontal lobe in **eyes open** state but in case of **eyes closed** state the connectivity is localized more in parietal and occipital regions. This form of slight perturbation in localization of connectivity was also observed using PDC estimatiors. The increased power in alpha band, as seen in PSD diagram, can be attributed to the phenomenon called ‘alpha blockage‘, the process in which alpha waves decreases and beta wave increases as a subject open their eyes.
 
-![alpha](assets/images/alpha.png)
+<img src="assets/images/alpha.png" width=600 />
